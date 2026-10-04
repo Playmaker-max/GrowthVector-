@@ -1,18 +1,21 @@
-import os
-from dotenv import load_dotenv
-from google import genai
+import re
+
+from app.groq import analyze_property as call_groq
 from app.schemas import PropertyIntelligence
 
-load_dotenv()
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-MODEL = "gemini-3.8-flash"
+def _extract_json(text: str) -> str:
+    text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL)
+    start, end = text.find("{"), text.rfind("}")
+    if start == -1 or end == -1:
+        raise ValueError("No JSON object found in model output")
+    return text[start : end + 1]
 
-def analyze_property(listing: str):
+
+def analyze_property(listing: str) -> PropertyIntelligence:
     prompt = f"""
-You are GrowthVector Property Intelligence.
-
-Analyze the property listing below.
+Analyze the property listing below for a real-estate agent.
+Base facts only on the listing. Fill every field in the schema.
 
 Return ONLY valid JSON matching this structure:
 {PropertyIntelligence.model_json_schema()}
@@ -20,14 +23,9 @@ Return ONLY valid JSON matching this structure:
 LISTING:
 {listing}
 """
+    raw = call_groq(prompt)
+    return PropertyIntelligence.model_validate_json(_extract_json(raw))
 
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=prompt,
-        config={"response_mime_type": "application/json"},
-    )
-
-    return PropertyIntelligence.model_validate_json(response.text)
 
 if __name__ == "__main__":
     listing = """
@@ -37,6 +35,5 @@ Price: R1,650,000.
 Modern kitchen, gas stove, secure complex, 24/7 security and pet-friendly.
 Close to major roads, shopping centres and schools.
 """
-
     result = analyze_property(listing)
     print(result.model_dump_json(indent=2))
