@@ -9,7 +9,7 @@ client = Groq(
     max_retries=4
 )
 
-MODEL = "qwen/qwen3.8-27b"
+MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 
 
 def analyze_property(prompt: str) -> str:
@@ -30,6 +30,7 @@ def analyze_property(prompt: str) -> str:
             },
         ],
         temperature=0.2,
+        max_tokens=int(os.getenv("GROQ_MAX_TOKENS", "4500")),
     )
 
     return response.choices[0].message.content

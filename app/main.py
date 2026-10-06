@@ -16,7 +16,9 @@ def analyze_property(listing: str) -> PropertyIntelligence:
     prompt = f"""
 Analyze the property listing below for a real-estate agent.
 Base facts only on the listing. Fill every field in the schema.
+Keep the JSON compact: at most 5 verified_facts, 4 missing_information, 2 buyer_hypotheses, 3 marketing_opportunities and 3 campaign_angles. Keep every string under 25 words. Make the description about 70 words.
 For listing_copy, write a headline, a description of about 100 words and a short social post. Use only facts stated in the listing. Do not invent features, views, distances or school names. Do not use unverifiable claims such as 'sought-after', 'prime location', 'perfect for' or 'ideal for'. State only what the listing says.
+The listing is South African. In missing_information and next_best_action, consider what an agent would need before a sale: compliance certificates, approval status of any extra structures such as staff quarters, and the age or condition of installed items like geysers, pools and roofs. Tie next_best_action to this specific listing.
 
 Return ONLY valid JSON matching this structure:
 {PropertyIntelligence.model_json_schema()}
