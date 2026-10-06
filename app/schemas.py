@@ -27,6 +27,12 @@ class MarketingOpportunity(BaseModel):
     risk_or_unknown: Optional[str] = None
 
 
+class ListingCopy(BaseModel):
+    headline: str
+    description: str
+    social_post: str
+
+
 class PropertyIntelligence(BaseModel):
     property_summary: str
     verified_facts: List[Evidence]
@@ -36,3 +42,4 @@ class PropertyIntelligence(BaseModel):
     campaign_angles: List[str]
     compliance_warnings: List[str]
     next_best_action: str
+    listing_copy: ListingCopy

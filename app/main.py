@@ -16,6 +16,7 @@ def analyze_property(listing: str) -> PropertyIntelligence:
     prompt = f"""
 Analyze the property listing below for a real-estate agent.
 Base facts only on the listing. Fill every field in the schema.
+For listing_copy, write a headline, a description of about 100 words and a short social post. Use only facts stated in the listing. Do not invent features, views, distances or school names. Do not use unverifiable claims such as 'sought-after', 'prime location', 'perfect for' or 'ideal for'. State only what the listing says.
 
 Return ONLY valid JSON matching this structure:
 {PropertyIntelligence.model_json_schema()}
