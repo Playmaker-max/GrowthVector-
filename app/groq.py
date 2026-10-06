@@ -5,7 +5,8 @@ from groq import Groq
 load_dotenv()
 
 client = Groq(
-    api_key=os.getenv("GROQ_API_KEY")
+    api_key=os.getenv("GROQ_API_KEY"),
+    max_retries=4
 )
 
 MODEL = "qwen/qwen3.8-27b"
