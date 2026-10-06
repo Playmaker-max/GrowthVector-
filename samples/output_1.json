@@ -1,102 +1,111 @@
 {
-  "property_summary": "Spacious four‑bedroom family home in Waterkloof Ridge, Pretoria, on a 1,050 m² stand. Approximately 280 m² of living space includes open‑plan lounge/dining, fireplace, modern kitchen with granite tops, main bedroom with en‑suite and walk‑in closet, swimming pool, braai area, double garage, staff quarters, alarm, electric fencing, solar geyser, and pet‑friendly policy. Nearby parks and several schools.",
+  "property_summary": "Spacious 4‑bedroom family home in Waterkloof Ridge, Pretoria, on 1,050 m², 280 m² house, pool, braai, solar geyser, staff quarters.",
   "verified_facts": [
     {
       "claim": "Four bedrooms",
-      "evidence": "Listing states \"Spacious 4‑bedroom family home\"",
-      "confidence": "high"
-    },
-    {
-      "claim": "Asking price R3,450,000",
-      "evidence": "Listing lists \"Asking R3,450,000\"",
+      "evidence": "Listing states spacious 4‑bedroom family home",
       "confidence": "high"
     },
     {
       "claim": "Stand size 1,050 m²",
-      "evidence": "Listing notes \"Stand size 1,050 m2\"",
+      "evidence": "Stand size 1,050 m2",
+      "confidence": "high"
+    },
+    {
+      "claim": "House size approx 280 m²",
+      "evidence": "house approx 280 m2",
       "confidence": "high"
     },
     {
       "claim": "Swimming pool and braai area present",
-      "evidence": "Listing includes \"Swimming pool, braai area\"",
+      "evidence": "Swimming pool, braai area",
       "confidence": "high"
     },
     {
-      "claim": "Pets are welcome",
-      "evidence": "Listing says \"Pets welcome\"",
+      "claim": "Solar geyser installed",
+      "evidence": "Solar geyser installed",
       "confidence": "high"
     }
   ],
   "missing_information": [
-    "Year of construction",
-    "Exact school names and distances",
-    "Property tax and utility costs",
-    "Recent renovation or upgrade details"
+    "Current building compliance certificate",
+    "Approval status of staff quarters",
+    "Age and condition of solar geyser",
+    "Roof age or recent renovations"
   ],
   "buyer_hypotheses": [
     {
       "buyer_type": "Growing family",
-      "why_it_may_fit": "Needs multiple bedrooms, outdoor entertainment space, and proximity to schools.",
+      "why_it_may_fit": "Four bedrooms, large lot, nearby schools, pet‑friendly",
       "needs_to_know": [
-        "School catchment zones",
-        "Safety statistics of the neighbourhood"
+        "Exact distance to schools",
+        "Safety of neighbourhood",
+        "Roof condition",
+        "Pool maintenance costs"
       ],
       "claims_to_verify": [
-        "Exact distance to nearest schools",
-        "Condition of the pool and braai area"
+        "Pool compliance certificate",
+        "Roof age",
+        "School proximity"
       ]
     },
     {
       "buyer_type": "Investor seeking rental",
-      "why_it_may_fit": "Large land, multiple bedrooms, staff quarters, and pet‑friendly policy increase rental appeal.",
+      "why_it_may_fit": "Staff quarters allow live‑in management, multiple bedrooms, pet‑friendly",
       "needs_to_know": [
-        "Rental market rates in Waterkloof Ridge",
-        "Potential HOA or community fees"
+        "Rental demand in Waterkloof Ridge",
+        "Zoning for staff quarters",
+        "Maintenance expenses",
+        "Compliance certificates"
       ],
       "claims_to_verify": [
-        "Current rental yields for similar properties",
-        "Legal restrictions on renting staff quarters"
+        "Zoning approval for staff quarters",
+        "Pool safety compliance",
+        "Building compliance"
       ]
     }
   ],
   "marketing_opportunities": [
     {
-      "opportunity": "Highlight extensive land size",
-      "reasoning": "1,050 m² offers space for future expansion or gardening.",
+      "opportunity": "Emphasise extensive outdoor entertainment space",
+      "reasoning": "Pool, braai area and large 1,050 m² block attract families who enjoy outdoor living",
       "supporting_evidence": [
-        "Listing specifies stand size"
+        "Swimming pool, braai area",
+        "Stand size 1,050 m2"
       ],
       "risk_or_unknown": null
     },
     {
-      "opportunity": "Promote security features",
-      "reasoning": "Alarm system and electric fencing appeal to safety‑concerned buyers.",
+      "opportunity": "Promote energy‑efficiency with solar geyser",
+      "reasoning": "Solar geyser can lower utility costs, appealing to eco‑conscious buyers",
       "supporting_evidence": [
-        "Listing mentions alarm and electric fencing"
+        "Solar geyser installed"
       ],
-      "risk_or_unknown": null
+      "risk_or_unknown": "Age and efficiency of geyser unknown"
     },
     {
-      "opportunity": "Emphasize pet‑friendly policy",
-      "reasoning": "Pets welcome broadens market to animal owners.",
+      "opportunity": "Target buyers needing staff accommodation",
+      "reasoning": "On‑site staff quarters add flexibility for larger households or rental income",
       "supporting_evidence": [
-        "Listing states \"Pets welcome\""
+        "staff quarters"
       ],
-      "risk_or_unknown": null
+      "risk_or_unknown": "Approval status of staff quarters required"
     }
   ],
   "campaign_angles": [
-    "Space for growing families",
-    "Entertainer’s dream with pool and braai",
-    "Secure, pet‑friendly lifestyle"
+    "Family living with private pool and braai",
+    "Eco‑friendly home with solar geyser",
+    "Spacious lot with staff quarters for flexibility"
   ],
   "compliance_warnings": [
-    "All details are seller‑provided; verify measurements and condition independently."
+    "Building compliance certificate required before sale",
+    "Pool safety compliance must be verified",
+    "Staff quarters must have approved use certificate"
   ],
-  "next_best_action": "Schedule a viewing, request floor plans, and obtain recent utility and tax statements.",
+  "next_best_action": "Obtain building, pool and staff‑quarters compliance certificates and verify solar geyser age to complete due‑diligence.",
   "listing_copy": {
-    "headline": "Spacious 4‑Bedroom Home with Pool in Waterkloof Ridge",
-    "description": "Discover this expansive four‑bedroom family residence on a 1,050 m² block in Waterkloof Ridge, Pretoria. The 280 m² home features an open‑plan lounge and dining area with a fireplace, a modern kitchen boasting granite countertops, and a master suite with en‑suite bathroom and walk‑in closet. Outdoor amenities include a swimming pool, braai area, double garage, staff quarters, alarm system, electric fencing, and a solar geyser. Pets are welcome, and the neighbourhood offers parks and several schools nearby.",
-    "social_post": "4‑bedroom family home in Waterkloof Ridge with pool, braai, double garage, and pet‑friendly policy. Near parks and schools. Ask for details!"
+    "headline": "Spacious 4‑Bedroom Home with Pool, Braai & Solar Geyser in Waterkloof Ridge",
+    "description": "Discover a generous four‑bedroom family residence in Waterkloof Ridge, Pretoria, set on a 1,050 m² block. The 280 m² home offers an open‑plan lounge and dining area with a fireplace, a modern kitchen featuring granite countertops, and a main bedroom with en‑suite and walk‑in closet. Additional amenities include a double garage, staff quarters, a swimming pool, braai area, alarm system, electric fencing, and a solar geyser. Pets are welcome, and the neighbourhood provides parks and several schools within easy reach.",
+    "social_post": "4‑bedroom family home in Waterkloof Ridge with pool, braai, solar geyser and staff quarters. Pets welcome. Near parks and schools. R3.45 million."
   }
 }
